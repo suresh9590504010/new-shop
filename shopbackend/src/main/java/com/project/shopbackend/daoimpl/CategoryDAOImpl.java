@@ -44,12 +44,25 @@ static {
 				category.setImageURL("CAT_3.png");
 				
 				categories.add(category);
+				
+	
+
 
 }
 
 	public List<Category> list() {
 		// TODO Auto-generated method stub
 		return categories;
+	}
+
+	@Override
+	public Category get(int id) {
+		//enhanced for loop
+		
+		for(Category category:categories) {
+			if(category.getId() ==id) return category;
+		}
+		return null;
 	}
 
 }

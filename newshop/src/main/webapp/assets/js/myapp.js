@@ -11,7 +11,7 @@ $(function() {
 		break;
 
 	default:
-		$('#home').addClass('active');
+		$('#listProducts').addClass('active');
 		break;
 	}
 });
